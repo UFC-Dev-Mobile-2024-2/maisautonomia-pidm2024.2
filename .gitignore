@@ -1,0 +1,65 @@
+# Arquivos do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Dependências
+**/node_modules/
+
+# Ambiente de desenvolvimento
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build e pastas geradas
+build/
+dist/
+coverage/
+*.exe
+*.out
+*.app
+
+# Logs e diretórios de cache
+logs/
+*.log
+.npm
+.yarn-integrity
+.cache/
+.temp/
+.idea/
+.vscode/
+.DS_Store
+
+# Arquivos de configuração local
+.eslintcache
+*.local
+
+# Sistema operacional
+Thumbs.db
+
+# Arquivos de IDE/Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Arquivos específicos do React Native
+/android/.gradle/
+/android/.idea/
+/android/app/build/
+/android/build/
+/ios/build/
+/ios/Pods/
+/ios/*.xcworkspace
+/ios/*.xcodeproj/xcuserdata/
+/ios/*.xcuserdatad/
+
+# Arquivos de usuário específicos do macOS
+.DS_Store

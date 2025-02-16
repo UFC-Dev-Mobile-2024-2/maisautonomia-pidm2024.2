@@ -1,0 +1,23 @@
+{
+  "name": "maisautonomia-pidm2024.2",
+  "version": "1.0.0",
+  "description": "539849 - ANA BEATRIZ CLAUDIO MACHADO - Product owner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UFC-Dev-Mobile-2024-2/maisautonomia-pidm2024.2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UFC-Dev-Mobile-2024-2/maisautonomia-pidm2024.2/issues"
+  },
+  "homepage": "https://github.com/UFC-Dev-Mobile-2024-2/maisautonomia-pidm2024.2#readme",
+  "dependencies": {
+    "react-native": "^0.77.1"
+  }
+}
