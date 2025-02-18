@@ -2,9 +2,13 @@
   "name": "maisautonomia-pidm2024.2",
   "version": "1.0.0",
   "description": "539849 - ANA BEATRIZ CLAUDIO MACHADO - Product owner",
-  "main": "index.js",
+  "main": "./app/app.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,13 @@
   "dependencies": {
     "expo": "^52.0.35",
     "react-native": "^0.77.1",
-    "react-native-paper": "^5.13.1"
+    "react-native-paper": "^5.13.1",
+    "react-dom": "18.3.1",
+    "react-native-web": "~0.19.13",
+    "@expo/metro-runtime": "~4.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/react": "~18.3.12"
   }
 }
