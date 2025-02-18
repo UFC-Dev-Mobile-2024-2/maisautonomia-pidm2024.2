@@ -35,7 +35,7 @@ const BottomNavigationBar = () => {
                 primary: '#0597F2',
                 accent: '#0597F2', 
             },
-        }}
+            }}
         />
     );
 };
