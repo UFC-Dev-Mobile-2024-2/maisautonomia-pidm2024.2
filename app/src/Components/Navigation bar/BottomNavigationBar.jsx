@@ -20,4 +20,22 @@ const BottomNavigationBar = () => {
         arquivados: ArchivedScreen,
     });
 
-}
+    const theme = useTheme();
+
+    return (
+        <BottomNavigation
+        navigationState = {{ index: activeTab, routes}}
+        onIndexChange = {setActiveTab}
+        renderScene = {renderScene}
+        barStyle = {{ backgroundColor: '#E7F5FE' }}
+        theme = {{
+            ...theme,
+            colors: {
+                ...theme.colors,
+                primary: '#0597F2',
+                accent: '#0597F2', 
+            },
+        }}
+        />
+    );
+};
