@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { BottomNavigation, Text, useTheme } from 'react-native-paper';
 
-const HomeScreen = () => <Text>Home</Text>;
-const ReportScreen = () => <Text>Relatório</Text>;
-const ArchivedScreen = () => <Text>Arquivados</Text>;
+const HomeScreen = () => null;
+const ReportScreen = () => null;
+const ArchivedScreen = () => null;
 
 const BottomNavigationBar = () => {
     const [activeTab, setActiveTab] = React.useState(0);
