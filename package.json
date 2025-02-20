@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/UFC-Dev-Mobile-2024-2/maisautonomia-pidm2024.2#readme",
   "dependencies": {
-    "react-native": "^0.77.1"
+    "react-native": "^0.77.1",
+    "react-native-paper-dates": "^0.22.34"
   }
 }
