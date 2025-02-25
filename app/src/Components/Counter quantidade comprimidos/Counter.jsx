@@ -49,6 +49,50 @@ const Counter = () => {
             icon={() => <Icon name="plus" size={24} color="#FFF" />}
           />
         </View>
+        <View style={styles.quickButtonsContainer}>
+        <Button
+          mode="contained"
+          onPress={() => increment(5)}
+          style={styles.quickButton}
+          labelStyle={styles.quickButtonLabel}
+        >
+          +5
+        </Button>
+        <Button
+          mode="contained"
+          onPress={() => increment(10)}
+          style={styles.quickButton}
+          labelStyle={styles.quickButtonLabel}
+        >
+          +10
+        </Button>
+        <Button
+          mode="contained"
+          onPress={() => increment(15)}
+          style={styles.quickButton}
+          labelStyle={styles.quickButtonLabel}
+        >
+          +15
+        </Button>
+        <Button
+          mode="contained"
+          onPress={() => increment(30)}
+          style={styles.quickButton}
+          labelStyle={styles.quickButtonLabel}
+        >
+          +30
+        </Button>
+      </View>
+
+      <Button
+        mode="contained"
+        onPress={() => {
+        }}
+        style={styles.addMedicationButton}
+        labelStyle={styles.addMedicationButtonLabel}
+      >
+        Adicionar nova medicação
+      </Button>
       </View>
     );
   };
