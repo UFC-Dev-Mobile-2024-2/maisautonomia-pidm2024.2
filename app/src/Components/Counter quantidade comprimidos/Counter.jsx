@@ -96,4 +96,97 @@ const Counter = () => {
       </View>
     );
   };
+
+  const styles = StyleSheet.create({
+    appContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      backgroundColor: '#F2F2F2',
+      padding: 16,
+    },
+    container: {
+      backgroundColor: '#FFFFFF',
+      borderRadius: 8,
+      padding: 16,
+      shadowColor: '#000',
+      shadowOpacity: 0.1,
+      shadowRadius: 5,
+      shadowOffset: { width: 0, height: 2 },
+      elevation: 2,
+      alignItems: 'center',
+    },
+    title: {
+      fontSize: 18,
+      fontWeight: '600',
+      marginBottom: 16,
+      textAlign: 'center',
+    },
+    counterRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 16,
+    },
+    circleButton: {
+      backgroundColor: '#0597F2',
+      borderRadius: 50,
+      width: 50,
+      height: 50,
+      marginHorizontal: 8,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    buttonContent: {
+      width: '100%',
+      height: '100%',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    countDisplay: {
+      alignItems: 'center',
+      marginHorizontal: 8,
+    },
+    countText: {
+      fontSize: 30,
+      fontWeight: 'bold',
+      color: '#333',
+    },
+    countLabel: {
+      fontSize: 14,
+      color: '#666',
+    },
+    quickButtonsContainer: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      marginBottom: 16,
+    },
+    quickButton: {
+      backgroundColor: '#0597F2',
+      borderRadius: 20,
+      width: 40,
+      height: 40,
+      margin: 4,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    quickButtonLabel: {
+      color: '#FFF',
+      fontSize: 12,
+      fontWeight: '600',
+    },
+    addMedicationButton: {
+      backgroundColor: '#0061A8',
+      borderRadius: 8,
+      paddingVertical: 10,
+      paddingHorizontal: 16,
+      marginTop: 8,
+      alignSelf: 'center',
+    },
+    addMedicationButtonLabel: {
+      color: '#FFF',
+      fontSize: 16,
+      fontWeight: '600',
+    },
+  });
+  
   
