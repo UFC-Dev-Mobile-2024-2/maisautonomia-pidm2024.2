@@ -34,6 +34,7 @@ const LoginScreen = ({ navigation }) => {
 
       if (response.ok) {
         Alert.alert('Login com sucesso!', `Token: ${data.token}`);
+        navigation.navigate("Home")
       } else {
         Alert.alert('Erro no login', data.error || 'Credenciais inválidas');
       }
