@@ -1,4 +1,3 @@
-// src/Components/LoginScreen.js
 import React, { useState } from 'react';
 import {
   View,
@@ -34,7 +33,7 @@ const LoginScreen = ({ navigation }) => {
 
       if (response.ok) {
         Alert.alert('Login com sucesso!', `Token: ${data.token}`);
-        navigation.navigate("Home")
+        navigation.navigate("Home");
       } else {
         Alert.alert('Erro no login', data.error || 'Credenciais inválidas');
       }
@@ -66,6 +65,10 @@ const LoginScreen = ({ navigation }) => {
 
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Entrar</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.createAccountButton} onPress={() => navigation.navigate("Register")}>
+        <Text style={styles.createAccountText}>Não tem uma conta? Criar Conta</Text>
       </TouchableOpacity>
     </View>
   );
@@ -101,6 +104,15 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold'
+  },
+  createAccountButton: {
+    marginTop: 16,
+    alignItems: 'center'
+  },
+  createAccountText: {
+    color: '#007AFF',
     fontSize: 16,
     fontWeight: 'bold'
   }

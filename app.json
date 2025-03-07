@@ -8,7 +8,7 @@
       }
     },
     "owner": "carolainel",
-    "icon": "./assets/icon.png", 
+    "icon": "./assets/icon.png",
     "android": {
       "package": "com.carolainel.carolainelmaisautonomiapidm20242",
       "adaptiveIcon": {
@@ -18,6 +18,9 @@
     },
     "ios": {
       "bundleIdentifier": "com.carolainel.carolainelmaisautonomiapidm20242"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
