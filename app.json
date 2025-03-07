@@ -8,8 +8,13 @@
       }
     },
     "owner": "carolainel",
+    "icon": "./assets/icon.png", 
     "android": {
-      "package": "com.carolainel.carolainelmaisautonomiapidm20242"
+      "package": "com.carolainel.carolainelmaisautonomiapidm20242",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
     },
     "ios": {
       "bundleIdentifier": "com.carolainel.carolainelmaisautonomiapidm20242"
