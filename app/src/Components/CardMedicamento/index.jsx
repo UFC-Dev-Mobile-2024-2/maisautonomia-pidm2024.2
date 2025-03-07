@@ -1,8 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Button, Card } from 'react-native-paper';
+import { Counter } from '../CounterQuantidadeComprimidos/Counter';
 
-export default function MedicationCard({ name, onEditPress, remainingPills }) {
+export default function MedicationCard({ name, onEditPress }) {
   return (
     <Card style={styles.medicationCard}>
       <Card.Content>
@@ -30,9 +31,7 @@ export default function MedicationCard({ name, onEditPress, remainingPills }) {
           </Button>
         </View>
 
-        <Button mode="outlined" textColor="#000" style={styles.whiteButton}>
-          {remainingPills} Comprimidos restantes
-        </Button>
+        <Counter />
       </Card.Content>
     </Card>
   );
@@ -66,7 +65,7 @@ const styles = StyleSheet.create({
   },
   whiteButton: {
     backgroundColor: '#FFF',
-    borderWidth: 1,          
-    borderColor: '#000',  
+    borderWidth: 1,
+    borderColor: '#000',
   },
 });

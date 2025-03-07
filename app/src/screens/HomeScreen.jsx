@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
-import { Button } from 'react-native-paper';
-import MedicationCard from '../Components/CardMedicamento/index';
+import { View, Text, StyleSheet, FlatList } from "react-native";
+import { Button } from "react-native-paper";
+import MedicationCard from "../Components/CardMedicamento/index";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   const [medications, setMedications] = useState([]);
 
   useEffect(() => {
-    fetch('https://67ca653d102d684575c534c5.mockapi.io/medications')
+    fetch("https://67ca653d102d684575c534c5.mockapi.io/medications")
       .then((response) => response.json())
       .then((data) => setMedications(data))
       .catch((error) => console.error('Erro ao buscar medicamentos:', error));
@@ -19,7 +19,7 @@ export default function HomeScreen() {
 
       <FlatList
         data={medications}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item) => item.id.toString()  }
         renderItem={({ item }) => (
           <MedicationCard
             name={item.name}
@@ -27,6 +27,7 @@ export default function HomeScreen() {
             onEditPress={() => console.log(`Editar ${item.name}`)}
           />
         )}
+        contentContainerStyle={{ paddingBottom: 80 }} 
       />
 
       <Button
@@ -35,6 +36,7 @@ export default function HomeScreen() {
         textColor="#FFF"
         style={styles.addButton}
         icon="plus"
+        onPress={() => navigation.navigate("AdicionarMedicamento")} 
       >
         Adicionar medicamento
       </Button>
