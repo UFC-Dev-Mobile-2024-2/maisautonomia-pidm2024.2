@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Mais Autonomia",
+    "slug": "carolainel-maisautonomia-pidm20242",
+    "extra": {
+      "eas": {
+        "projectId": "5aacb718-6654-4312-84e2-13fc72c80eb9"
+      }
+    },
+    "owner": "carolainel",
+    "android": {
+      "package": "com.carolainel.carolainelmaisautonomiapidm20242"
+    },
+    "ios": {
+      "bundleIdentifier": "com.carolainel.carolainelmaisautonomiapidm20242"
+    }
+  }
+}
