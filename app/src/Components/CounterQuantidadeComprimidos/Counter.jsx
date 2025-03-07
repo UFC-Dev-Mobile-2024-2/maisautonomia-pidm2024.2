@@ -1,8 +1,7 @@
-import React, { useState} from 'react';
-import { View, Text } from 'react-native';
-import {Button } from 'react-native-paper';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { Button } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { styles } from './styles';
 
 export default function App() {
     return (
@@ -12,7 +11,7 @@ export default function App() {
     );
 } 
 
-const Counter = () => {
+export const Counter = () => {
     const [count, setCount] = useState(0);
   
     const increment = (value = 1) => {
@@ -83,21 +82,11 @@ const Counter = () => {
           +30
         </Button>
       </View>
-
-      <Button
-        mode="contained"
-        onPress={() => {
-        }}
-        style={styles.addMedicationButton}
-        labelStyle={styles.addMedicationButtonLabel}
-      >
-        Adicionar nova medicação
-      </Button>
       </View>
     );
   };
 
-  const styles = StyleSheet.create({
+const styles = StyleSheet.create({
     appContainer: {
       flex: 1,
       justifyContent: 'center',
@@ -188,5 +177,3 @@ const Counter = () => {
       fontWeight: '600',
     },
   });
-  
-  
